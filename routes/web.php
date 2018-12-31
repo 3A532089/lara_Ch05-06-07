@@ -12,6 +12,7 @@
 */
 Route::get('/','HomeController@index');
 Route::get('cool','Cool\TestController@index');
+Route::get('board','TestController@getIndex');
 /*Route::pattern('student_no','s[0-9]{10}');
 Route::get('student/{student_no}',function($student_no){
     return "學號:".$student_no;
