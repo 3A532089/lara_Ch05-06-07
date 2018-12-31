@@ -13,9 +13,9 @@ class StudentController extends Controller
         return "學號:".$student_no."的".((is_null($subject))?"所有科目":$subject)."成績";
     }*/
     public function getStudentData($student_no){
-        return View::make('score',['student_no'=>$student_no,'subject'=>null]);
+        return \View('score',['student_no'=>$student_no,'subject'=>null]);
     }
     public function getStudentScore($student_no, $subject = null){
-        return View::make('score',['student_no'=>$student_no,'subject'=>$subject]);
+        return \View('score',['student_no'=>$student_no,'subject'=>$subject]);
     }*
 }

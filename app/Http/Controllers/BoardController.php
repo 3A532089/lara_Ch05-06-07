@@ -7,5 +7,5 @@ use Illuminate\Http\Request;
 class BoardController extends Controller
 {
     public function getIndex(){
-        return view::make('board');
+        return view('board');
 }
